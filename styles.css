@@ -1,0 +1,99 @@
+/* Reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0B192B, #1B2735);
+  font-family: 'Arial', sans-serif;
+  color: #FAFAFA;
+  text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Ondas pulsantes */
+.waves {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.waves span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: #FAFAFA;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: wave 2.5s ease-out infinite;
+  opacity: 0.8;
+}
+
+.waves span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.waves span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes wave {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  70% {
+    width: 80px;
+    height: 80px;
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Animaciones de texto */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+.fade-in.delay {
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #F1F3F2;
+  opacity: 0.8;
+}
+
+footer a {
+  color: #F1F3F2;
+  text-decoration: none;
+  border-bottom: 1px dotted #F1F3F2;
+  transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+  opacity: 0.6;
+}
