@@ -3,26 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pettersson - Pronto disponible</title>
+  <title>Pettersson</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <div class="container">
-    <div class="waves">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <h1 class="fade-in">🚀 Pettersson</h1>
-    <p class="fade-in delay">Estamos trabajando en algo increíble. ¡Pronto disponible!</p>
-  </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Pettersson</p>
+  <!-- Header -->
+  <header class="header">
+    <nav>
+      <a href="#inicio" class="logo">
+        <img src="assets/logoPetterssonBlanco.png" alt="Pettersson Logo">
+      </a>
+      <ul>
+        <li><a href="#sobre">Sobre Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <!-- Canvas para partículas -->
+    <canvas id="hero-particles"></canvas>
+    <div class="hero-text">
+      <h1>Sencillo pero poderoso</h1>
+      <p>Soluciones digitales prácticas para negocios, emprendedores y organizaciones.</p>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section id="sobre" class="content">
+    <h2>Sobre Nosotros</h2>
+    <p>En Pettersson somos apasionados por la tecnología y el emprendimiento. Nacimos con un propósito sencillo: ayudar a negocios, emprendedores y organizaciones a ahorrar tiempo, trabajar de forma más organizada y crecer usando soluciones digitales fáciles de usar.</p>
+
+    <h3>Nuestra Misión</h3>
+    <p>Hacer que la tecnología sea accesible y útil para cualquier negocio u organización, sin complicaciones, para que puedan enfocarse en lo que realmente importa: sus clientes y su crecimiento.</p>
+
+    <h3>Nuestra Visión</h3>
+    <p>Convertirnos en un aliado confiable para negocios, emprendedores y organizaciones, demostrando que con ideas simples y tecnología bien aplicada, incluso los proyectos pequeños pueden lograr grandes cosas.</p>
+
+    <h3>Nuestro Enfoque</h3>
+    <p>Entendemos los retos locales y regionales: procesos manuales, tareas repetitivas y dificultades para llegar a más clientes. Por eso diseñamos soluciones a medida, desde automatización de procesos hasta páginas web, siempre pensando en lo práctico y lo sencillo.</p>
+
+    <h3>Nuestra Filosofía</h3>
+    <p>Sencillo pero poderoso: buscamos el equilibrio entre lo técnico y lo práctico, diseñando herramientas claras y efectivas que generan gran impacto sin añadir complejidad innecesaria.</p>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="content">
+    <h2>Nuestros Servicios</h2>
+
+    <article class="service-item">
+      <img src="assets/web.png" alt="Desarrollo Web" class="service-logo">
+      <div class="service-text">
+        <h3>Desarrollo Web a Medida y Landing Pages</h3>
+        <p>Creamos sitios modernos, rápidos y optimizados, incluyendo landing pages efectivas.</p>
+        <small><b>Ejemplo:</b> Página de presentación para una pequeña empresa o un portafolio interactivo.</small>
+      </div>
+    </article>
+
+    <article class="service-item">
+      <img src="assets/automation.png" alt="Sistemas y Automatización" class="service-logo">
+      <div class="service-text">
+        <h3>Sistemas y Automatización</h3>
+        <p>Diseñamos herramientas que simplifican procesos repetitivos y aumentan la eficiencia.</p>
+        <small><b>Ejemplo:</b> Sistema para automatizar registros de clientes o control básico de inventario.</small>
+      </div>
+    </article>
+
+    <article class="service-item">
+      <img src="assets/advice.png" alt="Asesoría Tecnológica" class="service-logo">
+      <div class="service-text">
+        <h3>Asesoría Tecnológica</h3>
+        <p>Te ayudamos a elegir las soluciones digitales adecuadas y optimizar recursos.</p>
+        <small><b>Ejemplo:</b> Recomendar la mejor plataforma para tu tienda online o herramientas de colaboración.</small>
+      </div>
+    </article>
+  </section>
+
+  <!-- Footer con contacto -->
+  <footer id="contacto">
+    <div class="cover">
+      <img src="assets/coverPett.png" alt="Pettersson Logo">
+    </div>
+    <h2>Contáctanos</h2>
+    <p>¿Listo para llevar tu negocio al siguiente nivel? Escríbenos y conversemos sobre cómo podemos ayudarte.</p>
+
+    <!-- Contacto con íconos -->
+    <ul class="contact-list">
+      <li>
+        <a href="https://wa.me/573229011816" target="_blank">
+          <img src="assets/whatsLogo.png" alt="WhatsApp" class="icon"> +57 322 9011816
+        </a>
+      </li>
+      <li>
+        <a href="mailto:petterssonco94@gmail.com">
+          <img src="assets/emailLogo.png" alt="Email" class="icon"> petterssonco94@gmail.com
+        </a>
+      </li>
+    </ul>
+
+    <!-- Redes sociales solo íconos -->
+    <p><strong>Síguenos en nuestras redes sociales</strong></p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1YRhA1GVsR/" target="_blank">
+        <img src="assets/faceLogo.png" alt="Facebook" class="icon">
+      </a>
+      <a href="https://www.instagram.com/pettersson_co" target="_blank">
+        <img src="assets/instaLogo.png" alt="Instagram" class="icon">
+      </a>
+    </div>
+
+    <p class="footer-rights">© 2025 Pettersson. Todos los derechos reservados.</p>
   </footer>
 
   <script src="script.js"></script>
