@@ -1,7 +1,7 @@
 // script.js
 (function() {
   const script = document.createElement('script');
-  script.src = 'https://vercel.live/analytics/script.js';
+  script.src = '/_vercel/insights/script.js';
   script.defer = true;
   document.head.appendChild(script);
 })();
