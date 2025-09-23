@@ -1,3 +1,7 @@
+import { inject } from '@vercel/analytics';
+ 
+inject();
+
 const canvas = document.getElementById('hero-particles');
 const ctx = canvas.getContext('2d');
 
