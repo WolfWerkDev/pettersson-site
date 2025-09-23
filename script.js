@@ -1,6 +1,11 @@
-import { inject } from '@vercel/analytics';
- 
-inject();
+// script.js
+(function() {
+  const script = document.createElement('script');
+  script.src = 'https://vercel.live/analytics/script.js';
+  script.defer = true;
+  document.head.appendChild(script);
+})();
+
 
 const canvas = document.getElementById('hero-particles');
 const ctx = canvas.getContext('2d');
